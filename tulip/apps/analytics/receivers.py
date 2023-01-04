@@ -4,11 +4,11 @@ from django.db import IntegrityError
 from django.db.models import F
 from django.dispatch import receiver
 
-from oscar.apps.basket.signals import basket_addition
-from oscar.apps.catalogue.signals import product_viewed
-from oscar.apps.order.signals import order_placed
-from oscar.apps.search.signals import user_search
-from oscar.core.loading import get_model
+from tulip.apps.basket.signals import basket_addition
+from tulip.apps.catalogue.signals import product_viewed
+from tulip.apps.order.signals import order_placed
+from tulip.apps.search.signals import user_search
+from tulip.core.loading import get_model
 
 ProductRecord = get_model('analytics', 'ProductRecord')
 UserProductView = get_model('analytics', 'UserProductView')

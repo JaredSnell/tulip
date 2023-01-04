@@ -3,8 +3,8 @@ from django.conf import settings
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_model
-from oscar.forms import widgets
+from tulip.core.loading import get_model
+from tulip.forms import widgets
 
 ConditionalOffer = get_model('offer', 'ConditionalOffer')
 Condition = get_model('offer', 'Condition')

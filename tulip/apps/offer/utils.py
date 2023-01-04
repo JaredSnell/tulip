@@ -3,7 +3,7 @@ from importlib import import_module
 from django.core import exceptions
 from django.urls import reverse
 
-from oscar.apps.offer.applicator import Applicator  # backwards-compat  # noqa
+from tulip.apps.offer.applicator import Applicator  # backwards-compat  # noqa
 
 
 def range_anchor(range):

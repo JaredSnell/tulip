@@ -5,7 +5,7 @@ from decimal import Decimal as D
 from django.db.transaction import atomic
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 ImportingError = get_class('partner.exceptions', 'ImportingError')
 

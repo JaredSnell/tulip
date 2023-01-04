@@ -1,7 +1,7 @@
 from haystack import views
 
-from oscar.apps.search.signals import user_search
-from oscar.core.loading import get_class, get_model
+from tulip.apps.search.signals import user_search
+from tulip.core.loading import get_class, get_model
 
 Product = get_model('catalogue', 'Product')
 FacetMunger = get_class('search.facets', 'FacetMunger')

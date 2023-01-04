@@ -1,4 +1,4 @@
-from oscar.core.loading import get_class, get_classes
+from tulip.core.loading import get_class, get_classes
 
 OrderReportGenerator = get_class('order.reports', 'OrderReportGenerator')
 ProductReportGenerator, UserReportGenerator \

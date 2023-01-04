@@ -5,8 +5,8 @@ from django.apps import apps
 from django.core.exceptions import ImproperlyConfigured
 from django.urls import resolve, reverse
 
-from oscar.core.application import OscarDashboardConfig
-from oscar.views.decorators import check_permissions
+from tulip.core.application import OscarDashboardConfig
+from tulip.views.decorators import check_permissions
 
 logger = logging.getLogger('oscar.dashboard')
 

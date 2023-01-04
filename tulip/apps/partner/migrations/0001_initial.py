@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.models.fields.autoslugfield
-import oscar.models.fields
+import tulip.models.fields.autoslugfield
+import tulip.models.fields
 from django.conf import settings
 
 
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
             name='Partner',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Code', max_length=128, editable=False, blank=True)),
+                ('code', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Code', max_length=128, editable=False, blank=True)),
                 ('name', models.CharField(max_length=128, verbose_name='Name', blank=True)),
                 ('users', models.ManyToManyField(related_name='partners', blank=True, verbose_name='Users', to=settings.AUTH_USER_MODEL, null=True)),
             ],
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
                 ('line3', models.CharField(max_length=255, verbose_name='Third line of address', blank=True)),
                 ('line4', models.CharField(max_length=255, verbose_name='City', blank=True)),
                 ('state', models.CharField(max_length=255, verbose_name='State/County', blank=True)),
-                ('postcode', oscar.models.fields.UppercaseCharField(max_length=64, verbose_name='Post/Zip-code', blank=True)),
+                ('postcode', tulip.models.fields.UppercaseCharField(max_length=64, verbose_name='Post/Zip-code', blank=True)),
                 ('search_text', models.TextField(editable=False, verbose_name='Search text - used only for searching addresses')),
                 ('country', models.ForeignKey(verbose_name='Country', to='address.Country', on_delete=models.CASCADE)),
                 ('partner', models.ForeignKey(verbose_name='Partner', related_name='addresses', to='partner.Partner', on_delete=models.CASCADE)),

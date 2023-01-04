@@ -3,7 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 ConditionalOffer = get_model('offer', 'ConditionalOffer')
 Range = get_model('offer', 'Range')

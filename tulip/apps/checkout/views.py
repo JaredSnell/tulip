@@ -10,7 +10,7 @@ from django.urls import reverse, reverse_lazy
 from django.utils.translation import gettext as _
 from django.views import generic
 
-from oscar.core.loading import get_class, get_classes, get_model
+from tulip.core.loading import get_class, get_classes, get_model
 
 from . import signals
 

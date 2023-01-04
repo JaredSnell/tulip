@@ -7,7 +7,7 @@ from django.db.models.fields.files import ImageFieldFile
 from django.utils.encoding import smart_str
 from django.utils.html import escape
 
-from oscar.core.thumbnails import get_thumbnailer
+from tulip.core.thumbnails import get_thumbnailer
 
 register = template.Library()
 kw_pat = re.compile(r'^(?P<key>[\w]+)=(?P<value>.+)$')

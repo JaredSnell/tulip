@@ -4,7 +4,7 @@ from django.template.loader import render_to_string
 from django.urls import reverse
 from django.views import generic
 
-from oscar.core.loading import get_classes, get_model
+from tulip.core.loading import get_classes, get_model
 
 WeightBandForm, WeightBasedForm = get_classes(
     'dashboard.shipping.forms', ['WeightBandForm', 'WeightBasedForm'])

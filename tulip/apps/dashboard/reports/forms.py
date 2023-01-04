@@ -1,8 +1,8 @@
 from django import forms
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class
-from oscar.forms.widgets import DatePickerInput
+from tulip.core.loading import get_class
+from tulip.forms.widgets import DatePickerInput
 
 GeneratorRepository = get_class('dashboard.reports.utils',
                                 'GeneratorRepository')

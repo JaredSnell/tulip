@@ -2,10 +2,10 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.models.fields.autoslugfield
+import tulip.models.fields.autoslugfield
 import django.db.models.deletion
 import django.core.validators
-import oscar.models.fields
+import tulip.models.fields
 
 
 class Migration(migrations.Migration):
@@ -67,7 +67,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=128, verbose_name='Name')),
-                ('code', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Code', max_length=128, editable=False, blank=True)),
+                ('code', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Code', max_length=128, editable=False, blank=True)),
                 ('type', models.CharField(default='Required', max_length=128, verbose_name='Status', choices=[('Required', 'Required - a value for this option must be specified'), ('Optional', 'Optional - a value for this option can be omitted')])),
             ],
             options={
@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('structure', models.CharField(default='standalone', max_length=10, verbose_name='Product structure', choices=[('standalone', 'Stand-alone product'), ('parent', 'Parent product'), ('child', 'Child product')])),
-                ('upc', oscar.models.fields.NullCharField(unique=True, verbose_name='UPC', max_length=64, help_text='Universal Product Code (UPC) is an identifier for a product which is not specific to a particular  supplier. Eg an ISBN for a book.')),
+                ('upc', tulip.models.fields.NullCharField(unique=True, verbose_name='UPC', max_length=64, help_text='Universal Product Code (UPC) is an identifier for a product which is not specific to a particular  supplier. Eg an ISBN for a book.')),
                 ('title', models.CharField(max_length=255, verbose_name='Title', blank=True)),
                 ('slug', models.SlugField(max_length=255, verbose_name='Slug')),
                 ('description', models.TextField(verbose_name='Description', blank=True)),
@@ -162,7 +162,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=128, verbose_name='Name')),
-                ('slug', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
+                ('slug', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
                 ('requires_shipping', models.BooleanField(default=True, verbose_name='Requires shipping?')),
                 ('track_stock', models.BooleanField(default=True, verbose_name='Track stock levels?')),
                 ('options', models.ManyToManyField(verbose_name='Options', to='catalogue.Option', blank=True)),

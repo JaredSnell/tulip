@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.application import OscarConfig
+from tulip.core.application import OscarConfig
 
 
 class VoucherConfig(OscarConfig):

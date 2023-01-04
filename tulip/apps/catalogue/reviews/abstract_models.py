@@ -5,10 +5,10 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 
-from oscar.apps.catalogue.reviews.utils import get_default_review_status
-from oscar.core import validators
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.loading import get_class
+from tulip.apps.catalogue.reviews.utils import get_default_review_status
+from tulip.core import validators
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.loading import get_class
 
 ProductReviewQuerySet = get_class('catalogue.reviews.managers', 'ProductReviewQuerySet')
 

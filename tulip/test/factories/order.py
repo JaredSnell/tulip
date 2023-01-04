@@ -3,10 +3,10 @@ from decimal import Decimal as D
 import factory
 from django.conf import settings
 
-from oscar.core.loading import get_class, get_model
-from oscar.core.utils import slugify
-from oscar.test import factories
-from oscar.test.factories.utils import tax_add, tax_subtract
+from tulip.core.loading import get_class, get_model
+from tulip.core.utils import slugify
+from tulip.test import factories
+from tulip.test.factories.utils import tax_add, tax_subtract
 
 OrderCreator = get_class('order.utils', 'OrderCreator')
 

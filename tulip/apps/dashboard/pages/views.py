@@ -8,9 +8,9 @@ from django.utils.translation import gettext_lazy as _
 from django.views import generic
 from django.views.generic import ListView
 
-from oscar.core.loading import get_classes, get_model
-from oscar.core.utils import slugify
-from oscar.core.validators import URLDoesNotExistValidator
+from tulip.core.loading import get_classes, get_model
+from tulip.core.utils import slugify
+from tulip.core.validators import URLDoesNotExistValidator
 
 FlatPage = get_model('flatpages', 'FlatPage')
 Site = get_model('sites', 'Site')

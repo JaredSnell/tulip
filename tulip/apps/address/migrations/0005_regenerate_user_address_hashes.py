@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 
 ORMUserAddress = get_model('address', 'UserAddress')

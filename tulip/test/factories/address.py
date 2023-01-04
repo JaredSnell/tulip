@@ -1,7 +1,7 @@
 import factory
 from phonenumber_field.phonenumber import PhoneNumber
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 __all__ = [
     'CountryFactory', 'UserAddressFactory',

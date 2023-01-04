@@ -1,6 +1,6 @@
-from oscar.apps.address.abstract_models import (
+from tulip.apps.address.abstract_models import (
     AbstractCountry, AbstractUserAddress)
-from oscar.core.loading import is_model_registered
+from tulip.core.loading import is_model_registered
 
 __all__ = []
 

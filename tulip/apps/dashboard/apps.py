@@ -2,8 +2,8 @@ from django.apps import apps
 from django.urls import include, path
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.application import OscarDashboardConfig
-from oscar.core.loading import get_class
+from tulip.core.application import OscarDashboardConfig
+from tulip.core.loading import get_class
 
 
 class DashboardConfig(OscarDashboardConfig):

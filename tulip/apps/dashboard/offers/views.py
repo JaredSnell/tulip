@@ -12,8 +12,8 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import DeleteView, FormView, ListView
 
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.views import sort_queryset
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.views import sort_queryset
 
 ConditionalOffer = get_model('offer', 'ConditionalOffer')
 Condition = get_model('offer', 'Condition')

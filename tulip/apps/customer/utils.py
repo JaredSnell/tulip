@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 Dispatcher = get_class('communication.utils', 'Dispatcher')
 Selector = get_class('partner.strategy', 'Selector')

@@ -4,7 +4,7 @@ from django.conf import settings
 from django.contrib.sites.models import Site
 from django.core.mail import EmailMessage, EmailMultiAlternatives
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 CommunicationEventType = get_model('communication', 'CommunicationEventType')
 Email = get_model('communication', 'Email')

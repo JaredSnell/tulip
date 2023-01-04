@@ -4,9 +4,9 @@ from django.conf import settings
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as auth_login
 
-from oscar.apps.customer.signals import user_registered
-from oscar.core.compat import get_user_model
-from oscar.core.loading import get_class, get_model
+from tulip.apps.customer.signals import user_registered
+from tulip.core.compat import get_user_model
+from tulip.core.loading import get_class, get_model
 
 User = get_user_model()
 CommunicationEventType = get_model('communication', 'CommunicationEventType')

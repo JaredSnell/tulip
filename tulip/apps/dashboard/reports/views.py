@@ -4,7 +4,7 @@ from django.template.response import TemplateResponse
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import ListView
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 ReportForm = get_class('dashboard.reports.forms', 'ReportForm')
 GeneratorRepository = get_class('dashboard.reports.utils',

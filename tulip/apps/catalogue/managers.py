@@ -5,7 +5,7 @@ from django.db.models import Exists, OuterRef
 from django.db.models.constants import LOOKUP_SEP
 from treebeard.mp_tree import MP_NodeQuerySet
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 
 class AttributeFilter(dict):

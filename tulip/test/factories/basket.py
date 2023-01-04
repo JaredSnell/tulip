@@ -1,6 +1,6 @@
 import factory
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 Selector = get_class('partner.strategy', 'Selector')
 

@@ -13,7 +13,7 @@ from django.utils.text import slugify as django_slugify
 from django.utils.timezone import get_current_timezone, is_naive, make_aware
 from django.utils.translation import get_language, to_locale
 
-from oscar.core.compat import url_has_allowed_host_and_scheme
+from tulip.core.compat import url_has_allowed_host_and_scheme
 
 SLUGIFY_RE = re.compile(r'[^\w\s-]', re.UNICODE)
 

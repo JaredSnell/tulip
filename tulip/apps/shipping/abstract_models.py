@@ -5,8 +5,8 @@ from django.core.validators import MinValueValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core import loading, prices
-from oscar.models.fields import AutoSlugField
+from tulip.core import loading, prices
+from tulip.models.fields import AutoSlugField
 
 Scale = loading.get_class('shipping.scales', 'Scale')
 

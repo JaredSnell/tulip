@@ -2,7 +2,7 @@ import logging
 
 from django.core.management.base import BaseCommand, CommandError
 
-from oscar.core import customisation
+from tulip.core import customisation
 
 
 class Command(BaseCommand):

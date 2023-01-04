@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Order = get_model('order', 'Order')
 CommunicationEventType = get_model('communication', 'CommunicationEventType')

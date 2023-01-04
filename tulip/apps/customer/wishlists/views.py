@@ -8,8 +8,8 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import (
     CreateView, DeleteView, FormView, ListView, UpdateView, View)
 
-from oscar.core.loading import get_class, get_model
-from oscar.core.utils import redirect_to_referrer, safe_referrer
+from tulip.core.loading import get_class, get_model
+from tulip.core.utils import redirect_to_referrer, safe_referrer
 
 WishList = get_model('wishlists', 'WishList')
 Line = get_model('wishlists', 'Line')

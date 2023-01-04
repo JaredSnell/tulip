@@ -9,7 +9,7 @@ from django.utils.translation import get_language, get_language_from_path
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import override
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 
 class ExtendedURLValidator(validators.URLValidator):

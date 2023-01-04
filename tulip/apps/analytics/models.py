@@ -1,7 +1,7 @@
-from oscar.apps.analytics.abstract_models import (
+from tulip.apps.analytics.abstract_models import (
     AbstractProductRecord, AbstractUserProductView,
     AbstractUserRecord, AbstractUserSearch)
-from oscar.core.loading import is_model_registered
+from tulip.core.loading import is_model_registered
 
 __all__ = []
 

@@ -6,8 +6,8 @@ from django.core.exceptions import ImproperlyConfigured
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core import prices
-from oscar.core.loading import get_class, get_model
+from tulip.core import prices
+from tulip.core.loading import get_class, get_model
 
 from . import exceptions
 

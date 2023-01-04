@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.models.fields.autoslugfield
+import tulip.models.fields.autoslugfield
 from decimal import Decimal
-import oscar.models.fields
+import tulip.models.fields
 from django.conf import settings
 
 
@@ -21,9 +21,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('type', models.CharField(verbose_name='Type', max_length=128, blank=True, choices=[('Percentage', "Discount is a percentage off of the product's value"), ('Absolute', "Discount is a fixed amount off of the product's value"), ('Multibuy', 'Discount is to give the cheapest product for free'), ('Fixed price', 'Get the products that meet the condition for a fixed price'), ('Shipping absolute', 'Discount is a fixed amount of the shipping cost'), ('Shipping fixed price', 'Get shipping for a fixed price'), ('Shipping percentage', 'Discount is a percentage off of the shipping cost')])),
-                ('value', oscar.models.fields.PositiveDecimalField(max_digits=12, decimal_places=2, blank=True, verbose_name='Value', null=True)),
+                ('value', tulip.models.fields.PositiveDecimalField(max_digits=12, decimal_places=2, blank=True, verbose_name='Value', null=True)),
                 ('max_affected_items', models.PositiveIntegerField(verbose_name='Max Affected Items', blank=True, help_text='Set this to prevent the discount consuming all items within the range that are in the basket.', null=True)),
-                ('proxy_class', oscar.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
+                ('proxy_class', tulip.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
             ],
             options={
                 'verbose_name_plural': 'Benefits',
@@ -36,8 +36,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('type', models.CharField(verbose_name='Type', max_length=128, blank=True, choices=[('Count', 'Depends on number of items in basket that are in condition range'), ('Value', 'Depends on value of items in basket that are in condition range'), ('Coverage', 'Needs to contain a set number of DISTINCT items from the condition range')])),
-                ('value', oscar.models.fields.PositiveDecimalField(max_digits=12, decimal_places=2, blank=True, verbose_name='Value', null=True)),
-                ('proxy_class', oscar.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
+                ('value', tulip.models.fields.PositiveDecimalField(max_digits=12, decimal_places=2, blank=True, verbose_name='Value', null=True)),
+                ('proxy_class', tulip.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
             ],
             options={
                 'verbose_name_plural': 'Conditions',
@@ -50,7 +50,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(verbose_name='Name', unique=True, max_length=128, help_text="This is displayed within the customer's basket")),
-                ('slug', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
+                ('slug', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
                 ('description', models.TextField(verbose_name='Description', help_text='This is displayed on the offer browsing page', blank=True)),
                 ('offer_type', models.CharField(default='Site', max_length=128, verbose_name='Type', choices=[('Site', 'Site offer - available to all users'), ('Voucher', 'Voucher offer - only available after entering the appropriate voucher code'), ('User', 'User offer - available to certain types of user'), ('Session', 'Session offer - temporary offer, available for a user for the duration of their session')])),
                 ('status', models.CharField(default='Open', max_length=64, verbose_name='Status')),
@@ -64,7 +64,7 @@ class Migration(migrations.Migration):
                 ('total_discount', models.DecimalField(default=Decimal('0.00'), max_digits=12, decimal_places=2, verbose_name='Total Discount')),
                 ('num_applications', models.PositiveIntegerField(default=0, verbose_name='Number of applications')),
                 ('num_orders', models.PositiveIntegerField(default=0, verbose_name='Number of Orders')),
-                ('redirect_url', oscar.models.fields.ExtendedURLField(verbose_name='URL redirect (optional)', blank=True)),
+                ('redirect_url', tulip.models.fields.ExtendedURLField(verbose_name='URL redirect (optional)', blank=True)),
                 ('date_created', models.DateTimeField(auto_now_add=True, verbose_name='Date Created')),
                 ('benefit', models.ForeignKey(verbose_name='Benefit', to='offer.Benefit', on_delete=models.CASCADE)),
                 ('condition', models.ForeignKey(verbose_name='Condition', to='offer.Condition', on_delete=models.CASCADE)),
@@ -81,11 +81,11 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(unique=True, max_length=128, verbose_name='Name')),
-                ('slug', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
+                ('slug', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
                 ('description', models.TextField(blank=True)),
                 ('is_public', models.BooleanField(default=False, verbose_name='Is public?', help_text='Public ranges have a customer-facing page')),
                 ('includes_all_products', models.BooleanField(default=False, verbose_name='Includes all products?')),
-                ('proxy_class', oscar.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
+                ('proxy_class', tulip.models.fields.NullCharField(unique=True, verbose_name='Custom class', default=None, max_length=255)),
                 ('date_created', models.DateTimeField(auto_now_add=True, verbose_name='Date Created')),
                 ('classes', models.ManyToManyField(related_name='classes', verbose_name='Product Types', to='catalogue.ProductClass', blank=True)),
                 ('excluded_products', models.ManyToManyField(related_name='excludes', verbose_name='Excluded Products', to='catalogue.Product', blank=True)),

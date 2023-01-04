@@ -1,8 +1,8 @@
 from django import forms
 from django.conf import settings
 
-from oscar.core.loading import get_model
-from oscar.forms.mixins import PhoneNumberMixin
+from tulip.core.loading import get_model
+from tulip.forms.mixins import PhoneNumberMixin
 
 UserAddress = get_model('address', 'useraddress')
 

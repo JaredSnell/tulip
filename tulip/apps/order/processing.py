@@ -2,7 +2,7 @@ from decimal import Decimal as D
 
 from django.utils.translation import gettext_lazy as _
 
-from oscar.apps.order import exceptions
+from tulip.apps.order import exceptions
 
 
 class EventHandler(object):

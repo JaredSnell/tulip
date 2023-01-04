@@ -2,7 +2,7 @@ from decimal import Decimal as D
 
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core import prices
+from tulip.core import prices
 
 
 class Base(object):

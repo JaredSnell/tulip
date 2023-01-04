@@ -4,7 +4,7 @@ from django.template import TemplateSyntaxError
 from django.utils.translation import gettext_lazy as _
 from django.views import generic
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 CommunicationEventType = get_model('communication', 'CommunicationEventType')
 CommunicationEventTypeForm = get_class('dashboard.communications.forms',

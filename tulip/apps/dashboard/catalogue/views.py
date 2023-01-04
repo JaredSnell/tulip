@@ -9,8 +9,8 @@ from django.utils.translation import gettext_lazy as _
 from django.views import generic
 from django_tables2 import SingleTableMixin, SingleTableView
 
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.views.generic import ObjectLookupView
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.views.generic import ObjectLookupView
 
 (ProductForm,
  ProductClassSelectForm,

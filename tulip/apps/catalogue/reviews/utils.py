@@ -1,6 +1,6 @@
 from django.conf import settings
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 
 def get_default_review_status():

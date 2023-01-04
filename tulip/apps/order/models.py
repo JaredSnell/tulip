@@ -1,7 +1,7 @@
-from oscar.apps.address.abstract_models import (
+from tulip.apps.address.abstract_models import (
     AbstractBillingAddress, AbstractShippingAddress)
-from oscar.apps.order.abstract_models import *  # noqa
-from oscar.core.loading import is_model_registered
+from tulip.apps.order.abstract_models import *  # noqa
+from tulip.core.loading import is_model_registered
 
 __all__ = ['PaymentEventQuantity', 'ShippingEventQuantity']
 

@@ -3,7 +3,7 @@ from collections import defaultdict
 from django.contrib import messages
 from django.template.loader import render_to_string
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 Applicator = get_class('offer.applicator', 'Applicator')
 ConditionalOffer = get_model('offer', 'ConditionalOffer')

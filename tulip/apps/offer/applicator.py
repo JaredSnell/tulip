@@ -1,7 +1,7 @@
 import logging
 from itertools import chain
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 logger = logging.getLogger('oscar.offers')
 OfferApplications = get_class('offer.results', 'OfferApplications')

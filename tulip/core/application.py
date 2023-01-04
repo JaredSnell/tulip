@@ -2,7 +2,7 @@ from django.apps import AppConfig
 from django.core.exceptions import ImproperlyConfigured
 from django.urls import URLPattern, reverse_lazy
 
-from oscar.core.loading import feature_hidden
+from tulip.core.loading import feature_hidden
 
 
 class OscarConfigMixin(object):
@@ -125,7 +125,7 @@ class OscarConfigMixin(object):
 
         See permissions_required decorator for details
         """
-        from oscar.views.decorators import permissions_required
+        from tulip.views.decorators import permissions_required
         permissions = self.get_permissions(pattern.name)
         if permissions:
             return permissions_required(permissions, login_url=self.login_url)

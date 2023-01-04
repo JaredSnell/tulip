@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.forms.models import inlineformset_factory
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 WishList = get_model('wishlists', 'WishList')
 Line = get_model('wishlists', 'Line')

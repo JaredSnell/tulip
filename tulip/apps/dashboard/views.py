@@ -12,8 +12,8 @@ from django.urls import reverse_lazy
 from django.utils.timezone import now
 from django.views.generic import TemplateView
 
-from oscar.core.compat import get_user_model
-from oscar.core.loading import get_class, get_model
+from tulip.core.compat import get_user_model
+from tulip.core.loading import get_class, get_model
 
 RelatedFieldWidgetWrapper = get_class('dashboard.widgets', 'RelatedFieldWidgetWrapper')
 ConditionalOffer = get_model('offer', 'ConditionalOffer')

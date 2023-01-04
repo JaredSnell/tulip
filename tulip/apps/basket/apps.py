@@ -2,8 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.urls import path
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.application import OscarConfig
-from oscar.core.loading import get_class
+from tulip.core.application import OscarConfig
+from tulip.core.loading import get_class
 
 
 class BasketConfig(OscarConfig):

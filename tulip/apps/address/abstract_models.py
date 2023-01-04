@@ -8,8 +8,8 @@ from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 from phonenumber_field.modelfields import PhoneNumberField
 
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.models.fields import UppercaseCharField
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.models.fields import UppercaseCharField
 
 
 class AbstractAddress(models.Model):

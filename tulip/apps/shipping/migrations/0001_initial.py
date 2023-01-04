@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.models.fields.autoslugfield
+import tulip.models.fields.autoslugfield
 from decimal import Decimal
 import django.core.validators
 
@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             name='OrderAndItemCharges',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
+                ('code', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
                 ('name', models.CharField(unique=True, max_length=128, verbose_name='Name')),
                 ('description', models.TextField(verbose_name='Description', blank=True)),
                 ('price_per_order', models.DecimalField(default=Decimal('0.00'), max_digits=12, decimal_places=2, verbose_name='Price per order')),
@@ -53,7 +53,7 @@ class Migration(migrations.Migration):
             name='WeightBased',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', oscar.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
+                ('code', tulip.models.fields.autoslugfield.AutoSlugField(populate_from='name', unique=True, verbose_name='Slug', max_length=128, editable=False, blank=True)),
                 ('name', models.CharField(unique=True, max_length=128, verbose_name='Name')),
                 ('description', models.TextField(verbose_name='Description', blank=True)),
                 ('default_weight', models.DecimalField(validators=[django.core.validators.MinValueValidator(Decimal('0.00'))], verbose_name='Default Weight', default=Decimal('0.000'), max_digits=12, decimal_places=3, help_text='Default product weight in kg when no weight attribute is defined')),

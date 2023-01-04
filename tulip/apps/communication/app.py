@@ -2,8 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.urls import path
 from django.views import generic
 
-from oscar.core.application import Application
-from oscar.core.loading import get_class
+from tulip.core.application import Application
+from tulip.core.loading import get_class
 
 
 class CommunicationApplication(Application):

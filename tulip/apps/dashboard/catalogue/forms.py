@@ -3,9 +3,9 @@ from django.core import exceptions
 from django.utils.translation import gettext_lazy as _
 from treebeard.forms import movenodeform_factory
 
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.core.utils import slugify
-from oscar.forms.widgets import DateTimePickerInput, ImageInput
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.core.utils import slugify
+from tulip.forms.widgets import DateTimePickerInput, ImageInput
 
 Product = get_model('catalogue', 'Product')
 ProductClass = get_model('catalogue', 'ProductClass')

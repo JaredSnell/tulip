@@ -3,7 +3,7 @@ import logging
 from django.core.management.base import BaseCommand
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 logger = logging.getLogger(__name__)
 

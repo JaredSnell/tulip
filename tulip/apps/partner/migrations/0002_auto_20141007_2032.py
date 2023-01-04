@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.core.utils
+import tulip.core.utils
 
 
 class Migration(migrations.Migration):
@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='stockrecord',
             name='price_currency',
-            field=models.CharField(default=oscar.core.utils.get_default_currency, max_length=12, verbose_name='Currency'),
+            field=models.CharField(default=tulip.core.utils.get_default_currency, max_length=12, verbose_name='Currency'),
         ),
     ]

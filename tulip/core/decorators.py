@@ -1,6 +1,6 @@
 import warnings
 
-from oscar.utils.deprecation import RemovedInOscar32Warning
+from tulip.utils.deprecation import RemovedInOscar32Warning
 
 
 def deprecated(obj):

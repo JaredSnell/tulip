@@ -1,7 +1,7 @@
 import factory
 
-from oscar.core.compat import get_user_model
-from oscar.core.loading import get_model
+from tulip.core.compat import get_user_model
+from tulip.core.loading import get_model
 
 __all__ = ['ProductAlertFactory', 'UserFactory']
 

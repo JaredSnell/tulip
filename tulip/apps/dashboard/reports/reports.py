@@ -4,8 +4,8 @@ from django.http import HttpResponse
 from django.template.defaultfilters import date
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core import utils
-from oscar.core.compat import UnicodeCSVWriter
+from tulip.core import utils
+from tulip.core.compat import UnicodeCSVWriter
 
 
 class ReportGenerator(object):

@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
-import oscar.apps.catalogue.reviews.utils
+import tulip.apps.catalogue.reviews.utils
 
 
 class Migration(migrations.Migration):
@@ -16,6 +16,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='productreview',
             name='status',
-            field=models.SmallIntegerField(choices=[(0, 'Requires moderation'), (1, 'Approved'), (2, 'Rejected')], default=oscar.apps.catalogue.reviews.utils.get_default_review_status, verbose_name='Status'),
+            field=models.SmallIntegerField(choices=[(0, 'Requires moderation'), (1, 'Approved'), (2, 'Rejected')], default=tulip.apps.catalogue.reviews.utils.get_default_review_status, verbose_name='Status'),
         ),
     ]

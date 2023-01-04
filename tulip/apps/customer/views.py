@@ -11,12 +11,12 @@ from django.urls import reverse, reverse_lazy
 from django.utils.translation import gettext_lazy as _
 from django.views import generic
 
-from oscar.apps.customer.utils import get_password_reset_url
-from oscar.core.compat import get_user_model
-from oscar.core.loading import (
+from tulip.apps.customer.utils import get_password_reset_url
+from tulip.core.compat import get_user_model
+from tulip.core.loading import (
     get_class, get_classes, get_model, get_profile_class)
-from oscar.core.utils import safe_referrer
-from oscar.views.generic import PostActionMixin
+from tulip.core.utils import safe_referrer
+from tulip.views.generic import PostActionMixin
 
 from . import signals
 

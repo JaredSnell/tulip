@@ -3,7 +3,7 @@ import logging
 from django.db.models import Max
 from django.template import loader
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 ProductAlert = get_model('customer', 'ProductAlert')
 Product = get_model('catalogue', 'Product')

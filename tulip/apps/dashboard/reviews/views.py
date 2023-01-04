@@ -7,10 +7,10 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.views import generic
 
-from oscar.core.loading import get_classes, get_model
-from oscar.core.utils import format_datetime
-from oscar.views import sort_queryset
-from oscar.views.generic import BulkEditMixin
+from tulip.core.loading import get_classes, get_model
+from tulip.core.utils import format_datetime
+from tulip.views import sort_queryset
+from tulip.views.generic import BulkEditMixin
 
 ProductReviewSearchForm, DashboardProductReviewForm = \
     get_classes('dashboard.reviews.forms', ('ProductReviewSearchForm', 'DashboardProductReviewForm'))

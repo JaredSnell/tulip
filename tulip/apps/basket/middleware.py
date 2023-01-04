@@ -4,7 +4,7 @@ from django.core.signing import BadSignature, Signer
 from django.utils.functional import SimpleLazyObject, empty
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 Applicator = get_class('offer.applicator', 'Applicator')
 Basket = get_model('basket', 'basket')

@@ -2,8 +2,8 @@ from django import forms
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 
-from oscar.core.loading import get_model
-from oscar.core.validators import URLDoesNotExistValidator
+from tulip.core.loading import get_model
+from tulip.core.validators import URLDoesNotExistValidator
 
 FlatPage = get_model('flatpages', 'FlatPage')
 

@@ -1,6 +1,6 @@
 import factory
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 ConditionalOffer = get_model('offer', 'ConditionalOffer')
 

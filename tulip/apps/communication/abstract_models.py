@@ -6,9 +6,9 @@ from django.template.exceptions import TemplateDoesNotExist
 from django.template.loader import get_template
 from django.utils.translation import gettext_lazy as _
 
-from oscar.apps.communication.managers import CommunicationTypeManager
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.models.fields import AutoSlugField
+from tulip.apps.communication.managers import CommunicationTypeManager
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.models.fields import AutoSlugField
 
 
 class AbstractEmail(models.Model):

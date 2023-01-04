@@ -6,19 +6,19 @@ from decimal import Decimal as D
 from django.conf import settings
 from django.utils import timezone
 
-from oscar.core.loading import get_class, get_model
-from oscar.test.factories.address import *  # noqa
-from oscar.test.factories.basket import *  # noqa
-from oscar.test.factories.catalogue import *  # noqa
-from oscar.test.factories.contrib import *  # noqa
-from oscar.test.factories.customer import *  # noqa
-from oscar.test.factories.models import *  # noqa
-from oscar.test.factories.offer import *  # noqa
-from oscar.test.factories.order import *  # noqa
-from oscar.test.factories.partner import *  # noqa
-from oscar.test.factories.payment import *  # noqa
-from oscar.test.factories.voucher import *  # noqa
-from oscar.test.factories.wishlists import *  # noqa
+from tulip.core.loading import get_class, get_model
+from tulip.test.factories.address import *  # noqa
+from tulip.test.factories.basket import *  # noqa
+from tulip.test.factories.catalogue import *  # noqa
+from tulip.test.factories.contrib import *  # noqa
+from tulip.test.factories.customer import *  # noqa
+from tulip.test.factories.models import *  # noqa
+from tulip.test.factories.offer import *  # noqa
+from tulip.test.factories.order import *  # noqa
+from tulip.test.factories.partner import *  # noqa
+from tulip.test.factories.payment import *  # noqa
+from tulip.test.factories.voucher import *  # noqa
+from tulip.test.factories.wishlists import *  # noqa
 
 Basket = get_model('basket', 'Basket')
 Free = get_class('shipping.methods', 'Free')

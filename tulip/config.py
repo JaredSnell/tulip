@@ -5,8 +5,8 @@ from django.conf import settings
 from django.urls import path, reverse_lazy
 from django.views.generic.base import RedirectView
 
-from oscar.core.application import OscarConfig
-from oscar.core.loading import get_class
+from tulip.core.application import OscarConfig
+from tulip.core.loading import get_class
 
 
 class Shop(OscarConfig):
@@ -29,7 +29,7 @@ class Shop(OscarConfig):
     def get_urls(self):
         from django.contrib.auth import views as auth_views
 
-        from oscar.views.decorators import login_forbidden
+        from tulip.views.decorators import login_forbidden
 
         urls = [
             path('', RedirectView.as_view(url=settings.OSCAR_HOMEPAGE), name='home'),

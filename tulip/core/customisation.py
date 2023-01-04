@@ -5,7 +5,7 @@ from os.path import dirname, exists, join
 
 from django.apps import apps
 
-from oscar.core.application import OscarConfig
+from tulip.core.application import OscarConfig
 
 
 def create_local_app_folder(local_app_path):

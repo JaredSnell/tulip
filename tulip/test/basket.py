@@ -1,7 +1,7 @@
 from decimal import Decimal as D
 
-from oscar.core.loading import get_class
-from oscar.test import factories
+from tulip.core.loading import get_class
+from tulip.test import factories
 
 Default = get_class('partner.strategy', 'Default')
 

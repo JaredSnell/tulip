@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 OrderAndItemCharges = get_model('shipping', 'OrderAndItemCharges')
 WeightBand = get_model('shipping', 'WeightBand')

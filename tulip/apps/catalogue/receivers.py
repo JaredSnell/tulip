@@ -3,7 +3,7 @@ from django.conf import settings
 from django.db.models.signals import post_delete, post_save
 from django.dispatch import receiver
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Category = get_model("catalogue", "Category")
 
@@ -11,7 +11,7 @@ Category = get_model("catalogue", "Category")
 if settings.OSCAR_DELETE_IMAGE_FILES:
     from django.db import models
 
-    from oscar.core.thumbnails import get_thumbnailer
+    from tulip.core.thumbnails import get_thumbnailer
 
     ProductImage = get_model('catalogue', 'ProductImage')
 

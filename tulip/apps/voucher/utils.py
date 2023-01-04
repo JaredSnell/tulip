@@ -2,7 +2,7 @@ from itertools import zip_longest
 
 from django.utils.crypto import get_random_string
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 
 def generate_code(length, chars='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',

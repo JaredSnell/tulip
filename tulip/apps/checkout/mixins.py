@@ -5,8 +5,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseRedirect
 from django.urls import NoReverseMatch, reverse
 
-from oscar.apps.checkout.signals import post_checkout
-from oscar.core.loading import get_class, get_model
+from tulip.apps.checkout.signals import post_checkout
+from tulip.core.loading import get_class, get_model
 
 OrderCreator = get_class('order.utils', 'OrderCreator')
 OrderDispatcher = get_class('order.utils', 'OrderDispatcher')

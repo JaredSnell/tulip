@@ -11,9 +11,9 @@ from django.db.transaction import atomic
 from django.utils.translation import gettext_lazy as _
 from PIL import Image
 
-from oscar.apps.catalogue.exceptions import (
+from tulip.apps.catalogue.exceptions import (
     IdenticalImageError, ImageImportError, InvalidImageArchive)
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Product = get_model('catalogue', 'product')
 ProductImage = get_model('catalogue', 'productimage')

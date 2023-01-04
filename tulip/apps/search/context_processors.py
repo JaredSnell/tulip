@@ -1,4 +1,4 @@
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 SearchForm = get_class('search.forms', 'SearchForm')
 

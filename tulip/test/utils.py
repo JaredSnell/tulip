@@ -14,9 +14,9 @@ from django.db import connection
 from django.test import RequestFactory as BaseRequestFactory
 from sorl.thumbnail.conf import settings as sorl_settings
 
-from oscar.core.loading import get_class, get_model
-from oscar.core.thumbnails import get_thumbnailer
-from oscar.test.factories import ProductImageFactory, UserFactory
+from tulip.core.loading import get_class, get_model
+from tulip.core.thumbnails import get_thumbnailer
+from tulip.test.factories import ProductImageFactory, UserFactory
 
 OSCAR_IMAGE_FOLDER_FORMATTED = 'images/products/{0}/{1:02d}/'.format(date.today().year, date.today().month)
 FULL_PATH_TO_IMAGES_FOLDER = os.path.join(settings.MEDIA_ROOT, OSCAR_IMAGE_FOLDER_FORMATTED)

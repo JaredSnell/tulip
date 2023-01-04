@@ -1,4 +1,4 @@
-from oscar.core import prices
+from tulip.core import prices
 
 
 class Base(object):

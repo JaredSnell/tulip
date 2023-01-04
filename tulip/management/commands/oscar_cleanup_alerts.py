@@ -4,7 +4,7 @@ from datetime import timedelta
 from django.core.management.base import BaseCommand
 from django.utils.timezone import now
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 ProductAlert = get_model('customer', 'ProductAlert')
 

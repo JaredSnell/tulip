@@ -1,6 +1,6 @@
 from django.forms import TextInput, fields
 
-from oscar.core import validators
+from tulip.core import validators
 
 
 class ExtendedURLField(fields.URLField):

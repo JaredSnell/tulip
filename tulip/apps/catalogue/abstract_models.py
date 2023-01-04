@@ -24,12 +24,12 @@ from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 from treebeard.mp_tree import MP_Node
 
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.core.utils import slugify
-from oscar.core.validators import non_python_keyword
-from oscar.models.fields import AutoSlugField, NullCharField
-from oscar.models.fields.slugfield import SlugField
-from oscar.utils.models import get_image_upload_path
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.core.utils import slugify
+from tulip.core.validators import non_python_keyword
+from tulip.models.fields import AutoSlugField, NullCharField
+from tulip.models.fields.slugfield import SlugField
+from tulip.utils.models import get_image_upload_path
 
 CategoryQuerySet, ProductQuerySet = get_classes(
     'catalogue.managers', ['CategoryQuerySet', 'ProductQuerySet'])

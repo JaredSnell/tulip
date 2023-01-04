@@ -29,7 +29,7 @@ import re
 from django.conf import settings
 from django.utils.encoding import force_str
 
-from oscar.core.utils import slugify
+from tulip.core.utils import slugify
 
 from .slugfield import SlugField
 

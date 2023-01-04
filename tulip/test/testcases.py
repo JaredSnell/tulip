@@ -5,7 +5,7 @@ from django.urls import reverse
 from django_webtest import WebTest
 from purl import URL
 
-from oscar.core.compat import get_user_model
+from tulip.core.compat import get_user_model
 
 User = get_user_model()
 

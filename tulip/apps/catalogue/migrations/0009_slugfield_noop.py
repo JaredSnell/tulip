@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 from django.db import migrations
-import oscar.models.fields.slugfield
+import tulip.models.fields.slugfield
 
 
 class Migration(migrations.Migration):
@@ -16,6 +16,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='category',
             name='slug',
-            field=oscar.models.fields.slugfield.SlugField(max_length=255, verbose_name='Slug'),
+            field=tulip.models.fields.slugfield.SlugField(max_length=255, verbose_name='Slug'),
         ),
     ]

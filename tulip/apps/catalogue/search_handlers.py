@@ -2,7 +2,7 @@ from django.conf import settings
 from django.utils.module_loading import import_string
 from django.views.generic.list import MultipleObjectMixin
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 BrowseCategoryForm = get_class('search.forms', 'BrowseCategoryForm')
 SearchHandler = get_class('search.search_handlers', 'SearchHandler')

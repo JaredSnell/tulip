@@ -2,7 +2,7 @@
 
 from django.core.management.base import BaseCommand
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Product = get_model('catalogue', 'Product')
 

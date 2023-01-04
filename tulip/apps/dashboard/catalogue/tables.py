@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from django.utils.translation import ngettext_lazy
 from django_tables2 import A, Column, LinkColumn, TemplateColumn
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 DashboardTable = get_class('dashboard.tables', 'DashboardTable')
 Product = get_model('catalogue', 'Product')

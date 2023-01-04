@@ -4,8 +4,8 @@ from django.contrib.auth.password_validation import validate_password
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 
-from oscar.core.compat import existing_user_fields, get_user_model
-from oscar.core.loading import get_class, get_model
+from tulip.core.compat import existing_user_fields, get_user_model
+from tulip.core.loading import get_class, get_model
 
 User = get_user_model()
 Partner = get_model('partner', 'Partner')

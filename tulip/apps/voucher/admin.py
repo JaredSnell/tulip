@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Voucher = get_model('voucher', 'Voucher')
 VoucherApplication = get_model('voucher', 'VoucherApplication')

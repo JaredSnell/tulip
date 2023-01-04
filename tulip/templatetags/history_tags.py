@@ -4,7 +4,7 @@ from django import template
 from django.urls import Resolver404, resolve
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 Site = get_model('sites', 'Site')
 CustomerHistoryManager = get_class('customer.history', 'CustomerHistoryManager')

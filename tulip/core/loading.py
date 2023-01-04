@@ -10,9 +10,9 @@ from django.conf import settings
 from django.core.exceptions import AppRegistryNotReady
 from django.utils.module_loading import import_string
 
-from oscar.core.exceptions import (
+from tulip.core.exceptions import (
     AppNotFoundError, ClassNotFoundError, ModuleNotFoundError)
-from oscar.utils.deprecation import RemovedInOscar32Warning
+from tulip.utils.deprecation import RemovedInOscar32Warning
 
 # To preserve backwards compatibility of loading classes which moved
 # from one Oscar module to another, we look into the dictionary below
@@ -183,7 +183,7 @@ def _find_registered_app_name(module_label):
     Given a module label, finds the name of the matching Oscar app from the
     Django app registry.
     """
-    from oscar.core.application import OscarConfig
+    from tulip.core.application import OscarConfig
 
     app_label = module_label.split('.')[0]
     try:

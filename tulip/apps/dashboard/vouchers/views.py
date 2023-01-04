@@ -10,9 +10,9 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.views import generic
 
-from oscar.core.loading import get_class, get_model
-from oscar.core.utils import slugify
-from oscar.views import sort_queryset
+from tulip.core.loading import get_class, get_model
+from tulip.core.utils import slugify
+from tulip.views import sort_queryset
 
 VoucherForm = get_class('dashboard.vouchers.forms', 'VoucherForm')
 VoucherSetForm = get_class('dashboard.vouchers.forms', 'VoucherSetForm')

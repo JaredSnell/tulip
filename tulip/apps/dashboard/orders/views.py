@@ -13,13 +13,13 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import DetailView, FormView, ListView, UpdateView
 
-from oscar.apps.order import exceptions as order_exceptions
-from oscar.apps.payment.exceptions import PaymentError
-from oscar.core.compat import UnicodeCSVWriter
-from oscar.core.loading import get_class, get_model
-from oscar.core.utils import datetime_combine, format_datetime
-from oscar.views import sort_queryset
-from oscar.views.generic import BulkEditMixin
+from tulip.apps.order import exceptions as order_exceptions
+from tulip.apps.payment.exceptions import PaymentError
+from tulip.core.compat import UnicodeCSVWriter
+from tulip.core.loading import get_class, get_model
+from tulip.core.utils import datetime_combine, format_datetime
+from tulip.views import sort_queryset
+from tulip.views.generic import BulkEditMixin
 
 Partner = get_model('partner', 'Partner')
 Transaction = get_model('payment', 'Transaction')

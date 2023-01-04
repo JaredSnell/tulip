@@ -5,8 +5,8 @@ from django.contrib.sites.models import Site
 from django.db import transaction
 from django.utils.translation import gettext_lazy as _
 
-from oscar.apps.order.signals import order_placed
-from oscar.core.loading import get_class, get_model
+from tulip.apps.order.signals import order_placed
+from tulip.core.loading import get_class, get_model
 
 from . import exceptions
 

@@ -5,7 +5,7 @@ from django.utils.encoding import smart_str
 from django.utils.translation import gettext_lazy as _
 from django.views.generic.base import View
 
-from oscar.core.utils import safe_referrer
+from tulip.core.utils import safe_referrer
 
 
 class PostActionMixin(object):

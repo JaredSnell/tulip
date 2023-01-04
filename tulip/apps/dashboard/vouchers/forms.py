@@ -4,9 +4,9 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 
-from oscar.apps.voucher.utils import get_unused_code
-from oscar.core.loading import get_model
-from oscar.forms import widgets
+from tulip.apps.voucher.utils import get_unused_code
+from tulip.core.loading import get_model
+from tulip.forms import widgets
 
 Voucher = get_model('voucher', 'Voucher')
 VoucherSet = get_model('voucher', 'VoucherSet')

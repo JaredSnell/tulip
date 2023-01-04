@@ -2,7 +2,7 @@ import django
 from django import template
 from django.template.base import TextNode
 
-from oscar.core.compat import FormFieldNode
+from tulip.core.compat import FormFieldNode
 
 register = template.Library()
 

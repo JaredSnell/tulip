@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models, migrations
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 # Django database migrations require us to fetch the category model
 # via apps.get_model to get an instance of the model at this point

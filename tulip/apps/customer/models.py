@@ -1,5 +1,5 @@
-from oscar.apps.customer import abstract_models
-from oscar.core.loading import is_model_registered
+from tulip.apps.customer import abstract_models
+from tulip.core.loading import is_model_registered
 
 __all__ = []
 

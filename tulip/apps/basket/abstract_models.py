@@ -10,11 +10,11 @@ from django.utils.encoding import smart_str
 from django.utils.timezone import now
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.loading import get_class, get_classes
-from oscar.core.utils import get_default_currency, round_half_up
-from oscar.models.fields.slugfield import SlugField
-from oscar.templatetags.currency_filters import currency
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.loading import get_class, get_classes
+from tulip.core.utils import get_default_currency, round_half_up
+from tulip.models.fields.slugfield import SlugField
+from tulip.templatetags.currency_filters import currency
 
 OfferApplications = get_class('offer.results', 'OfferApplications')
 Unavailable = get_class('partner.availability', 'Unavailable')

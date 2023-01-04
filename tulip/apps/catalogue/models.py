@@ -1,8 +1,8 @@
 """
 Vanilla product models
 """
-from oscar.apps.catalogue.abstract_models import *  # noqa
-from oscar.core.loading import is_model_registered
+from tulip.apps.catalogue.abstract_models import *  # noqa
+from tulip.core.loading import is_model_registered
 
 __all__ = ['ProductAttributesContainer']
 

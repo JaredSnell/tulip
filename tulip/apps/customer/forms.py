@@ -12,12 +12,12 @@ from django.utils.crypto import get_random_string
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 
-from oscar.apps.customer.utils import get_password_reset_url, normalise_email
-from oscar.core.compat import (
+from tulip.apps.customer.utils import get_password_reset_url, normalise_email
+from tulip.core.compat import (
     existing_user_fields, get_user_model, url_has_allowed_host_and_scheme)
-from oscar.core.loading import get_class, get_model, get_profile_class
-from oscar.core.utils import datetime_combine
-from oscar.forms import widgets
+from tulip.core.loading import get_class, get_model, get_profile_class
+from tulip.core.utils import datetime_combine
+from tulip.forms import widgets
 
 CustomerDispatcher = get_class('customer.utils', 'CustomerDispatcher')
 ProductAlert = get_model('customer', 'ProductAlert')

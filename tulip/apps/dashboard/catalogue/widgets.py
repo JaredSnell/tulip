@@ -1,6 +1,6 @@
 from django.urls import reverse_lazy
 
-from oscar.forms.widgets import MultipleRemoteSelect, RemoteSelect
+from tulip.forms.widgets import MultipleRemoteSelect, RemoteSelect
 
 
 class ProductSelect(RemoteSelect):

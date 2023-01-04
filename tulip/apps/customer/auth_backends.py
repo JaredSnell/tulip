@@ -1,8 +1,8 @@
 from django.contrib.auth.backends import ModelBackend
 from django.core.exceptions import ImproperlyConfigured
 
-from oscar.apps.customer.utils import normalise_email
-from oscar.core.compat import get_user_model
+from tulip.apps.customer.utils import normalise_email
+from tulip.core.compat import get_user_model
 
 User = get_user_model()
 

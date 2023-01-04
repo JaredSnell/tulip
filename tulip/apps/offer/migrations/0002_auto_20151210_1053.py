@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import oscar.models.fields
+import tulip.models.fields
 
 
 class Migration(migrations.Migration):
@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='benefit',
             name='proxy_class',
-            field=oscar.models.fields.NullCharField(default=None, max_length=255, verbose_name='Custom class'),
+            field=tulip.models.fields.NullCharField(default=None, max_length=255, verbose_name='Custom class'),
             preserve_default=True,
         ),
     ]

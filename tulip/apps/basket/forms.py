@@ -4,8 +4,8 @@ from django.db.models import Sum
 from django.forms.utils import ErrorDict
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_model
-from oscar.forms import widgets
+from tulip.core.loading import get_model
+from tulip.forms import widgets
 
 Line = get_model('basket', 'line')
 Basket = get_model('basket', 'basket')

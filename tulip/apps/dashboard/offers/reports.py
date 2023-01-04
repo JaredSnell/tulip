@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 ReportCSVFormatter = get_class(
     'dashboard.reports.reports', 'ReportCSVFormatter')

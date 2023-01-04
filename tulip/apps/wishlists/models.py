@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from oscar.core.loading import is_model_registered
+from tulip.core.loading import is_model_registered
 
 from .abstract_models import *  # noqa
 

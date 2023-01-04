@@ -7,8 +7,8 @@ from django.core import validators
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_model
-from oscar.forms.mixins import PhoneNumberMixin
+from tulip.core.loading import get_class, get_model
+from tulip.forms.mixins import PhoneNumberMixin
 
 from . import bankcards
 

@@ -4,8 +4,8 @@ from decimal import Decimal as D
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import ngettext
 
-from oscar.core.loading import get_classes, get_model
-from oscar.templatetags.currency_filters import currency
+from tulip.core.loading import get_classes, get_model
+from tulip.templatetags.currency_filters import currency
 
 Condition = get_model('offer', 'Condition')
 range_anchor, unit_price = get_classes('offer.utils', ['range_anchor', 'unit_price'])

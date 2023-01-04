@@ -1,7 +1,7 @@
 from collections import namedtuple
 from decimal import Decimal as D
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 Unavailable = get_class('partner.availability', 'Unavailable')
 Available = get_class('partner.availability', 'Available')

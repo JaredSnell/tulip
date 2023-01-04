@@ -3,7 +3,7 @@ from decimal import Decimal
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.compat import AUTH_USER_MODEL
+from tulip.core.compat import AUTH_USER_MODEL
 
 
 class AbstractProductRecord(models.Model):

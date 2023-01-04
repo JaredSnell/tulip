@@ -3,10 +3,10 @@ from decimal import Decimal
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.utils import get_default_currency
-from oscar.models.fields import AutoSlugField
-from oscar.templatetags.currency_filters import currency
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.utils import get_default_currency
+from tulip.models.fields import AutoSlugField
+from tulip.templatetags.currency_filters import currency
 
 from . import bankcards
 

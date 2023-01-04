@@ -9,12 +9,12 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import FormView, View
 from extra_views import ModelFormSetView
 
-from oscar.apps.basket.signals import (
+from tulip.apps.basket.signals import (
     basket_addition, voucher_addition, voucher_removal)
-from oscar.core import ajax
-from oscar.core.compat import url_has_allowed_host_and_scheme
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.core.utils import redirect_to_referrer, safe_referrer
+from tulip.core import ajax
+from tulip.core.compat import url_has_allowed_host_and_scheme
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.core.utils import redirect_to_referrer, safe_referrer
 
 Applicator = get_class('offer.applicator', 'Applicator')
 (BasketLineForm, AddToBasketForm, BasketVoucherForm, SavedLineForm) = get_classes(

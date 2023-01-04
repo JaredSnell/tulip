@@ -6,8 +6,8 @@ from django.db.models import Sum
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.decorators import deprecated
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.decorators import deprecated
 
 
 class AbstractVoucherSet(models.Model):

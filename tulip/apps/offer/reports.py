@@ -2,7 +2,7 @@ from decimal import Decimal as D
 
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_model
+from tulip.core.loading import get_class, get_model
 
 ReportGenerator = get_class('dashboard.reports.reports', 'ReportGenerator')
 ReportCSVFormatter = get_class('dashboard.reports.reports',

@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models, migrations
 import django.db.models.deletion
-import oscar.core.validators
+import tulip.core.validators
 from django.conf import settings
 
 
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('score', models.SmallIntegerField(verbose_name='Score', choices=[(0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (5, 5)])),
-                ('title', models.CharField(max_length=255, verbose_name='Title', validators=[oscar.core.validators.non_whitespace])),
+                ('title', models.CharField(max_length=255, verbose_name='Title', validators=[tulip.core.validators.non_whitespace])),
                 ('body', models.TextField(verbose_name='Body')),
                 ('name', models.CharField(max_length=255, verbose_name='Name', blank=True)),
                 ('email', models.EmailField(max_length=75, verbose_name='Email', blank=True)),

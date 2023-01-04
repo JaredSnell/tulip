@@ -1,7 +1,7 @@
 from django.forms.models import BaseModelFormSet, modelformset_factory
 from django.utils.functional import cached_property
 
-from oscar.core.loading import get_classes, get_model
+from tulip.core.loading import get_classes, get_model
 
 Line = get_model('basket', 'line')
 BasketLineForm, SavedLineForm = get_classes('basket.forms', ['BasketLineForm', 'SavedLineForm'])

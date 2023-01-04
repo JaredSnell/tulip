@@ -1,6 +1,6 @@
-from oscar.apps.voucher.abstract_models import (
+from tulip.apps.voucher.abstract_models import (
     AbstractVoucher, AbstractVoucherApplication, AbstractVoucherSet)
-from oscar.core.loading import is_model_registered
+from tulip.core.loading import is_model_registered
 
 __all__ = []
 

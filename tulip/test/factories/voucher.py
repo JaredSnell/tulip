@@ -3,9 +3,9 @@ import datetime
 import factory
 from django.utils.timezone import now
 
-from oscar.apps.voucher.utils import get_unused_code
-from oscar.core.loading import get_model
-from oscar.test.factories import ConditionalOfferFactory
+from tulip.apps.voucher.utils import get_unused_code
+from tulip.core.loading import get_model
+from tulip.test.factories import ConditionalOfferFactory
 
 ConditionalOffer = get_model('offer', 'ConditionalOffer')
 Voucher = get_model('voucher', 'Voucher')

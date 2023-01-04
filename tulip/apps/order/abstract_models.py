@@ -12,12 +12,12 @@ from django.utils.timezone import now
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import pgettext_lazy
 
-from oscar.apps.order.signals import (
+from tulip.apps.order.signals import (
     order_line_status_changed, order_status_changed)
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.loading import get_model
-from oscar.core.utils import get_default_currency
-from oscar.models.fields import AutoSlugField
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.loading import get_model
+from tulip.core.utils import get_default_currency
+from tulip.models.fields import AutoSlugField
 
 from . import exceptions
 

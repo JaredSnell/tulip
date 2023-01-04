@@ -3,8 +3,8 @@ from decimal import Decimal as D
 from django.conf import settings
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_class, get_classes, get_model
-from oscar.templatetags.currency_filters import currency
+from tulip.core.loading import get_class, get_classes, get_model
+from tulip.templatetags.currency_filters import currency
 
 Benefit = get_model('offer', 'Benefit')
 BasketDiscount, SHIPPING_DISCOUNT, ZERO_DISCOUNT = get_classes('offer.results', [

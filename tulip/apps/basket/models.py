@@ -1,6 +1,6 @@
-from oscar.apps.basket.abstract_models import (
+from tulip.apps.basket.abstract_models import (
     AbstractBasket, AbstractLine, AbstractLineAttribute)
-from oscar.core.loading import is_model_registered
+from tulip.core.loading import is_model_registered
 
 __all__ = [
     'InvalidBasketLineError',

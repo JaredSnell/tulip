@@ -1,7 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 from django_tables2 import A, Column, LinkColumn, TemplateColumn
 
-from oscar.core.loading import get_class
+from tulip.core.loading import get_class
 
 DashboardTable = get_class('dashboard.tables', 'DashboardTable')
 

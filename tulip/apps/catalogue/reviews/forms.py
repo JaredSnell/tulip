@@ -1,7 +1,7 @@
 from django import forms
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.loading import get_model
+from tulip.core.loading import get_model
 
 Vote = get_model('reviews', 'vote')
 ProductReview = get_model('reviews', 'productreview')

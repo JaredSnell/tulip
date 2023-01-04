@@ -1,8 +1,8 @@
 from django.urls import path
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.application import OscarConfig
-from oscar.core.loading import get_class
+from tulip.core.application import OscarConfig
+from tulip.core.loading import get_class
 
 
 class SearchConfig(OscarConfig):
@@ -35,6 +35,6 @@ class SearchConfig(OscarConfig):
         """
         Return the SQS required by a the Haystack search view
         """
-        from oscar.apps.search import facets
+        from tulip.apps.search import facets
 
         return facets.base_sqs()

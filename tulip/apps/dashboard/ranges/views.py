@@ -13,8 +13,8 @@ from django.utils.translation import ngettext
 from django.views.generic import (
     CreateView, DeleteView, ListView, UpdateView, View)
 
-from oscar.core.loading import get_classes, get_model
-from oscar.views.generic import BulkEditMixin
+from tulip.core.loading import get_classes, get_model
+from tulip.views.generic import BulkEditMixin
 
 Range = get_model('offer', 'Range')
 RangeProduct = get_model('offer', 'RangeProduct')

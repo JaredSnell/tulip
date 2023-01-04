@@ -13,11 +13,11 @@ from django.utils.functional import cached_property
 from django.utils.timezone import get_current_timezone, now
 from django.utils.translation import gettext_lazy as _
 
-from oscar.core.compat import AUTH_USER_MODEL
-from oscar.core.loading import (
+from tulip.core.compat import AUTH_USER_MODEL
+from tulip.core.loading import (
     cached_import_string, get_class, get_classes, get_model)
-from oscar.models import fields
-from oscar.templatetags.currency_filters import currency
+from tulip.models import fields
+from tulip.templatetags.currency_filters import currency
 
 ActiveOfferManager, RangeManager, BrowsableRangeManager \
     = get_classes('offer.managers', ['ActiveOfferManager', 'RangeManager', 'BrowsableRangeManager'])

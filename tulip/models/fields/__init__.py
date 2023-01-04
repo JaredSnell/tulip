@@ -3,9 +3,9 @@ from django.db.models.fields import CharField, DecimalField
 from django.utils.translation import gettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
 
-from oscar.core import validators
-from oscar.forms import fields
-from oscar.models.fields.autoslugfield import AutoSlugField
+from tulip.core import validators
+from tulip.forms import fields
+from tulip.models.fields.autoslugfield import AutoSlugField
 
 AutoSlugField = AutoSlugField
 PhoneNumberField = PhoneNumberField

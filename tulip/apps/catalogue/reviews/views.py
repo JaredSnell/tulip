@@ -4,9 +4,9 @@ from django.shortcuts import get_object_or_404, redirect
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView, DetailView, ListView, View
 
-from oscar.apps.catalogue.reviews.signals import review_added
-from oscar.core.loading import get_classes, get_model
-from oscar.core.utils import redirect_to_referrer
+from tulip.apps.catalogue.reviews.signals import review_added
+from tulip.core.loading import get_classes, get_model
+from tulip.core.utils import redirect_to_referrer
 
 ProductReviewForm, VoteForm, SortReviewsForm = get_classes(
     'catalogue.reviews.forms',
