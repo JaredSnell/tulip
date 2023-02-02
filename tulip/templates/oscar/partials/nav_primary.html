@@ -56,8 +56,13 @@
             {% endblock %}
 
             {% block nav_extra %}
-                {% include "oscar/partials/search.html" %}
+                {% for page in flatpages %}
+			        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+	             {% endfor %}
             {% endblock %}
+
         </div>
     {% endblock %}
+
+
 </nav>

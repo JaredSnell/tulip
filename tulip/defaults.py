@@ -3,7 +3,7 @@ from collections import OrderedDict
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
-OSCAR_SHOP_NAME = 'Vonn Charity Marketplace'
+OSCAR_SHOP_NAME = 'Tulip'
 OSCAR_SHOP_TAGLINE = 'Meaningful Gifts For Charities In Need'
 OSCAR_HOMEPAGE = reverse_lazy('catalogue:index')
 
@@ -23,7 +23,9 @@ OSCAR_RECENTLY_VIEWED_COOKIE_SECURE = False
 OSCAR_RECENTLY_VIEWED_PRODUCTS = 20
 
 # Currency
-OSCAR_DEFAULT_CURRENCY = 'GBP'
+OSCAR_DEFAULT_CURRENCY = 'USD'
+OSCAR_CURRENCY_LOCALE = 'en-US'
+OSCAR_CURRENCY_FORMAT = '$#,###.##'
 
 # Paths
 OSCAR_IMAGE_FOLDER = 'images/products/%Y/%m/'
